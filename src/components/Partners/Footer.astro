@@ -1,9 +1,14 @@
 ---
 export interface Props {
-
+  version: string;
 }
 
+const { version } = Astro.props;
 ---
-<div class="container-fluid p-4 bg-dark-subtle text-center">
-  <p>Made by AltiesGamingStudios</p>
+<div class="bg-slate-800 text-slate-400 p-5">
+  Made by Dragon Forge Code
+  <br />
+  <div class="text-slate-700">
+    {version}
+  </div>
 </div>

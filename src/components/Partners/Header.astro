@@ -5,7 +5,17 @@ export interface Props {
 
 const { subtitle } = Astro.props;
 ---
-<div class="p-3 bg-success-subtle text-success text-center">
-  <h1>AGS Patnerships</h1>
-  <p>{subtitle}</p> 
+<div class="p-3 bg-pink-800 text-pink-400 text-center h-auto">
+  <h1 class="text-4xl">Dragon Forge NEXUS Patnerships</h1>
+  {subtitle}
 </div>
+<nav class="flex sm:justify-center space-x-4">
+	{[
+		['Home', '/Partners'],
+		['FYTS', '/Partners/FYTS'],
+		// ['Sponserships', '//Partners/Sponserships'],
+		['Hub', '/'],
+	].map(([title, url]) => (
+		<a href={url} class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-700 hover:text-slate-900 drop-shadow-lg">{title}</a>
+	))}
+</nav>

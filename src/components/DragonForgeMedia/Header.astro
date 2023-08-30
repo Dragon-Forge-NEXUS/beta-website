@@ -1,0 +1,31 @@
+---
+export interface Props {
+	subtitle: string;
+}
+
+const { subtitle } = Astro.props;
+---
+<div class="p-3 bg-sky-800 text-sky-400 text-center h-auto">
+  <h1 class="text-4xl">Dragon Forge Media</h1>
+  {subtitle}
+</div>
+<nav class="flex sm:justify-center space-x-4">
+	{[
+		['Home', '/DragonForgeMedia'],
+		['AG', '/DragonForgeMedia/AG'],
+    ['AGL', '/DragonForgeMedia/AGL'],
+		['FEAT', '/DragonForgeMedia/FEAT'],
+	].map(([title, url]) => (
+		<a href={url} class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-700 hover:text-slate-900 drop-shadow-lg">{title}</a>
+	))}
+</nav>
+<nav class="flex sm:justify-center space-x-4">
+	{[
+		['FAQ', '/DragonForgeMedia/FAQ'],
+		['Discord', '/DragonForgeMedia/Discord'],
+		['Retired', '/DragonForgeMedia/Retired'],
+		['Hub', '/'],
+	].map(([title, url]) => (
+		<a href={url} class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-700 hover:text-slate-900 drop-shadow-lg">{title}</a>
+	))}
+</nav>
