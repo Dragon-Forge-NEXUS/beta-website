@@ -1,14 +1,12 @@
 ---
 export interface Props {
-  version: string;
 }
-
-const { version } = Astro.props;
+import Version from '../version.astro'
 ---
 <div class="bg-slate-800 text-slate-400 p-5">
   Made by Dragon Forge Code
   <br />
   <div class="text-slate-700">
-    {version}
+    <Version />
   </div>
 </div>
