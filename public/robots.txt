@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://beta.altiesgamingstudios.com/sitemap-index.xml
