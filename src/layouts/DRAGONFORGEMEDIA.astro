@@ -2,38 +2,29 @@
 export interface Props {
 	title: string;
 	description: string;
+	page: string;
 }
 
-const { title } = Astro.props;
-const { description } = Astro.props;
+const { title, description, page } = Astro.props;
 const full_title = title + ' | Dragon Forge Media'
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Imports
+import Footer from '../components/DragonForgeMedia/Footer.astro';
+import Header from '../components/DragonForgeMedia/Header.astro';
+import Head from '../components/head.astro'
 ---
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark" class="bg-slate-900 text-slate-400">
 	<head>
-		<!-- sitemap, favicon, title, and metadata -->
-		<link rel="sitemap" href="/sitemap-index.xml" />
-		<meta charset="UTF-8" />
-		<meta name="description" content={description}>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image" href="/DRAGON FORGE MEDIA.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{full_title}</title>
-		<!--Google API(s)-->
-		<script src="https://apis.google.com/js/platform.js"></script>
-		<!--Jquery-->
-		<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+		<Head title={full_title} description={description} icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGEMEDIA.png" banner="/imgs/Logos/Banner/Solid/1000x500/PNG/DRAGONFORGEMEDIA-solid-banner.png" page={canonicalURL}/>
 	</head>
 	<body>
-		<slot />
-		<!-- Bootstrap JS bundle -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<Header subtitle={title}/>
+		<div class="min-h-screen">
+			<slot />
+		</div>
+		<Footer />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-</style>

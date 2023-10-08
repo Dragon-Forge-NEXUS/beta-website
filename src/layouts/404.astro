@@ -10,7 +10,7 @@ const full_title = title + ' | Dragon Forge NEXUS'
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-gray-800">
 	<head>
 		<!-- sitemap, favicon, title, and metadata -->
 		<link rel="sitemap" href="/sitemap-index.xml" />
@@ -21,13 +21,7 @@ const full_title = title + ' | Dragon Forge NEXUS'
 		<meta name="generator" content={Astro.generator} />
 		<title>{full_title}</title>
 	</head>
-	<body class="bg-gray-800">
+	<body>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-</style>

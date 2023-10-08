@@ -3,7 +3,7 @@
 ## Table Of Contents:
 
 # Code platform(s):
-ASTRO v2, JS, TS, Bootstrap v5.3.0
+ASTRO v2, JS, TS, Tailwind css
 
 # pre-Compiled:
 NO
@@ -120,3 +120,6 @@ here are refrences for all of the websites:
 * Partners/requirements.md (only for ```import```s) -->
   * out of folder "<code>Partners</code>" /Partners/requirements.md
   * in folder "<code>Partners</code>" ./requirements.md
+
+## update script:
+`npm i astro@latest | npm i @astrojs/tailwind@latest | npm i @astrojs/sitemap@latest | npm i daisyui@latest | npm i @astrojs/mdx@latest | npm i @astrojs/rss@latest`
