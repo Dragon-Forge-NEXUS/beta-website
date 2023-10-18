@@ -6,16 +6,30 @@ export interface Props {
 const { subtitle } = Astro.props;
 ---
 <div class="p-3 bg-pink-800 text-pink-400 text-center h-auto">
-  <h1 class="text-4xl">Dragon Forge NEXUS Patnerships</h1>
+  <h1 class="text-4xl">DragonForgeNEXUS Patnerships</h1>
   {subtitle}
 </div>
-<nav class="flex sm:justify-center space-x-4">
-	{[
-		['Home', '/Partners'],
-		['FYTS', '/Partners/FYTS'],
-		// ['Sponserships', '//Partners/Sponserships'],
-		['Hub', '/'],
-	].map(([title, url]) => (
-		<a href={url} class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-700 hover:text-slate-900 drop-shadow-lg">{title}</a>
-	))}
-</nav>
+<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl" href="/Partners">DragonForgeNEXUS | Partners</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="/Partners/FYTS/">FYTS</a></li>
+			<!-- <li><a href="">Sponserships</a></li> -->
+      <!-- <li>
+        <details>
+          <summary>
+            more
+          </summary>
+          <ul class="p-2 bg-base-100">
+            <li><a href="/DragonForgeMedia/DragonForgeGaming">DFG</a></li>
+						<li><a href="/DragonForgeMedia/FAQ">FAQ</a></li>
+						<li><a href="/DragonForgeMedia/Discord">Discord</a></li>
+          </ul>
+        </details>
+      </li> -->
+			<li><a href="/">Hub</a></li>
+    </ul>
+  </div>
+</div>

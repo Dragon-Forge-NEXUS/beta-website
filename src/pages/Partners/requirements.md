@@ -6,3 +6,5 @@
 ## Twitch FYTS:
 * 50+ followers
 * Stream atleast once a month
+
+#### WE HARDLY EVER IMFORCE THE REQUIREMENTS
