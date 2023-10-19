@@ -14,7 +14,9 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.2",
     "@astrojs/tailwind": "^5.0.2",
-    "astro": "^3.3.2"
+    "astro": "^3.3.2",
+    "firebase": "^10.5.0",
+    "firebase-admin": "^11.11.0"
   },
   "devDependencies": {
     "daisyui": "^3.9.3"
