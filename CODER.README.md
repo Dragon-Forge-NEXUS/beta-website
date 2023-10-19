@@ -122,4 +122,4 @@ here are refrences for all of the websites:
   * in folder "<code>Partners</code>" ./requirements.md
 
 ## update script:
-`npm i astro@latest | npm i @astrojs/tailwind@latest | npm i @astrojs/sitemap@latest | npm i daisyui@latest | npm i @astrojs/mdx@latest | npm i @astrojs/rss@latest`
+`npm i astro@latest | npm i @astrojs/tailwind@latest | npm i @astrojs/sitemap@latest | npm i daisyui@latest | npm i @astrojs/mdx@latest | npm i @astrojs/rss@latest | npm i firebase@latest | npm i firebase-admin@latest`

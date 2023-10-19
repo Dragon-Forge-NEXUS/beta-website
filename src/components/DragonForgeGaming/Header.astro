@@ -1,0 +1,34 @@
+---
+export interface Props {
+	subtitle: string;
+}
+
+const { subtitle } = Astro.props;
+---
+<div class="p-3 bg-fuchsia-800 text-fuchsia-400 text-center h-auto">
+  <h1 class="text-4xl">DragonForgeGaming</h1>
+  {subtitle}
+</div>
+<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl" href="/DragonForgeMedia">DragonForgeGaming</a>
+  </div>
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <li><a href="">Articles (Coming Soon!)</a></li>
+      <li>
+        <details>
+          <summary>
+            more
+          </summary>
+          <ul class="p-2 bg-base-100">
+            <li><a href="/DragonForgeMedia/DragonForgeGaming">DFG</a></li>
+						<li><a href="/DragonForgeMedia/FAQ">FAQ</a></li>
+						<li><a href="/DragonForgeMedia/Discord">Discord</a></li>
+          </ul>
+        </details>
+      </li>
+			<li><a href="/">Hub</a></li>
+    </ul>
+  </div>
+</div>

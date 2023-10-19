@@ -1,0 +1,30 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	page: string;
+}
+
+const { title, description, page } = Astro.props;
+const full_title = title + ' | DragonForgeGaming'
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Imports
+import Footer from '../components/Footer.astro';
+import Header from '../components/DragonForgeGaming/Header.astro';
+import Head from '../components/head.astro'
+---
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="bg-slate-900 text-slate-400">
+	<head>
+		<Head title={full_title} description={description} icon="/imgs/Logos/Square/Solid/250/PNG/DRAGONFORGEGAMING.png" banner="/imgs/Logos/Banner/Solid/1000x500/PNG/DRAGONFORGEGAMING-solid-banner.png" page={canonicalURL}/>
+	</head>
+	<body>
+		<Header subtitle={title}/>
+		<div class="min-h-screen">
+			<slot />
+		</div>
+		<Footer />
+	</body>
+</html>
