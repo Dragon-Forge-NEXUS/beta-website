@@ -1,6 +1,8 @@
+const apiKey = process.env.youtube_api_key;
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Replace 'YOUR_API_KEY' with your YouTube API key
-  var apiKey = 'AIzaSyDe_T9FnA-kpwi5mfJwsudAur4N-Vc6ROA';
+  // Uncomment and add YouTube API key for local dev.
+  // var apiKey = '';
 
   // Find all elements with IDs that match the pattern "ci={channelID}"
   var channelElements = document.querySelectorAll('[id^="ci="]');

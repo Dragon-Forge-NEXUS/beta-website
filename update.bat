@@ -1,1 +1,0 @@
-npm i astro@latest | npm i @astrojs/tailwind@latest | npm i @astrojs/sitemap@latest | npm i daisyui@latest | npm i @astrojs/mdx@latest | npm i @astrojs/rss@latest
