@@ -10,7 +10,7 @@ import {
   useRouteError,
   isRouteErrorResponse,
 } from "@remix-run/react";
-import stylesheet from "~/tailwind.css";
+import stylesheet from "~/styles/tailwind.css";
 import { canUseDOM } from "./ui/primitives/utils";
 import { Footer } from "~/ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/remix"
