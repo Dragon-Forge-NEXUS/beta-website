@@ -13,6 +13,7 @@ import {
 import stylesheet from "~/tailwind.css";
 import { canUseDOM } from "./ui/primitives/utils";
 import { Footer } from "~/ui/footer";
+import { SpeedInsights } from "@vercel/speed-insights/remix"
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -35,6 +36,7 @@ export default function App() {
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
+          <SpeedInsights/>
         </div>
         <Footer />
       </body>
