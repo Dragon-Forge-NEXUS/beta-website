@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-import { redirect, type MetaFunction } from "@remix-run/node";
+import { type MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
@@ -43,8 +43,4 @@ function Header() {
       </div>
     </div>
   );
-}
-
-export async function loader() {
-  return redirect("/", 303);
 }
