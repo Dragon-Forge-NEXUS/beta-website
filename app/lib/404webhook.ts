@@ -4,7 +4,7 @@ export async function SendDiscordWebhook(message: string) {
     console.log("entered");
     const formated_msg = "404 page reached:\nhttps://nightly.dragonforgenexus.xyz/" + message;
     try {
-        const webhookURL = 'https://discord.com/api/webhooks/1213649717263859782/uEdN1QOwmssCKoX9SndPBdGM90TqD9eCw3WEbogknuBpuS_4cOGSDwGwASalFKX3jkcl';
+        const webhookURL = String(process.env.DISCORD);
         const payload = {
             content: formated_msg
         };
