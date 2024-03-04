@@ -12,9 +12,9 @@ export default function Index() {
   return (
     <div>
       <div className="p-6">
-        <div className="text-4xl">AGS Partnerships</div>
+        <div className="text-4xl">DragonForgeNEXUS Partnerships</div>
         <br />
-        AGS partnerships are FYTS members and sponserships.<br />As of now we do not have any sponsors, thus the page is not available.
+        DragonForgeNEXUS partnerships are FYTS members and sponserships.<br />As of now we do not have any sponsors, thus the page is not available.
       </div>
     </div>
   );
