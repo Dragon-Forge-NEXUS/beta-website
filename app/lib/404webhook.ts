@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-export async function SendDiscordWebhook(message: string) {
+export async function SendDiscordWebhook(message: string, userAgent: string) {
     console.log("entered");
-    const formated_msg = "404 page reached:\nhttps://nightly.dragonforgenexus.xyz/" + message;
+    const formated_msg = "404 page reached:\nhttps://nightly.dragonforgenexus.xyz/" + message + "\n\nUserAgent:\n" + userAgent;
     try {
         const webhookURL = String(process.env.DISCORD);
         const payload = {
