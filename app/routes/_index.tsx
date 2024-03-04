@@ -24,12 +24,12 @@ export default function Index() {
           <div className="text-2xl">DragonForgeNEXUS Blog</div>
         </a>
       </div>
-      {/* <div className="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-[#3f6212] duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
+      <div className="mx-auto w-1/2 transition ease-in-out delay-150 hover:scale-105 bg-slate-800 text-slate-400 hover:bg-[#3f6212] duration-300 h-auto lg:px-8 md:px-6 sm:px-4 rounded-lg drop-shadow-lg py-4 text-center my-5">
         <a href="/partners">
           <div className="text-2xl">DragonForgeNEXUS&apos; Partners</div>
           <div>DragonForgeNEXUS&apos; Partnerships.</div>
         </a>
-      </div> */}
+      </div>
     </div>
   );
 }

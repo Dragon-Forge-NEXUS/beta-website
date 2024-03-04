@@ -2,9 +2,14 @@ import axios from 'axios';
 
 export async function SendDiscordWebhook(message: string, userAgent: string) {
     console.log("entered");
-    const formated_msg = "404 page reached:\nhttps://nightly.dragonforgenexus.xyz/" + message + "\n\nUserAgent:\n" + userAgent;
+    let formated_msg = ""
+    if (message == "undefined"){
+        formated_msg = "redirect page reached:\nhttps://nightly.dragonforgenexus.xyz/dfm\n\nUserAgent:\n" + userAgent;
+    } else {
+        formated_msg = "redirect page reached:\nhttps://nightly.dragonforgenexus.xyz/dfm" + message + "\n\nUserAgent:\n" + userAgent;
+    }
     try {
-        const webhookURL = String(process.env.DISCORD_404);
+        const webhookURL = String(process.env.DISCORD_REDIRECT);
         const payload = {
             content: formated_msg
         };

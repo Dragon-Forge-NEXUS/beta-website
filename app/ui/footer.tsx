@@ -10,7 +10,7 @@ export function Footer(){
       </aside> 
       <nav>
         <header className="footer-title">Entities</header> 
-        <a className="link link-hover" href="/DragonForgeMedia">DragonForgeMedia</a> 
+        <a className="link link-hover" href="/dfm">DragonForgeMedia</a> 
         {/* <a className="link link-hover">DragonForgeCode</a> */}
         {/* <a className="link link-hover">DragonForgeNews</a> */}
         {/* <a className="link link-hover">DragonForgeNetwork</a> */}

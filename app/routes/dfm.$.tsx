@@ -1,12 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-import { redirect, type MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "DragonForgeMedia" },
-    { name: "description", content: "Welcome to DragonForgeMedia!" },
-  ];
-};
+import { LoaderFunctionArgs, redirect } from "@remix-run/node";
+import { SendDiscordWebhook } from "~/lib/redirectwebhookdfm";
 
 export default function Index() {
   return (
@@ -15,6 +9,8 @@ export default function Index() {
   );
 }
 
-export async function loader() {
+export const loader = async ({ request, params }: LoaderFunctionArgs) => {
+  const userAgent = request.headers.get('User-Agent') || 'Unknown';
+  SendDiscordWebhook(String(params["*"]), userAgent);
   return redirect("/dfm", 303);
 }
