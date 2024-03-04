@@ -1,5 +1,5 @@
 export function Version(){
   return(
-    <span>Nightly v2.8.0</span>
+    <span>Nightly v2.8.1</span>
   );
   }

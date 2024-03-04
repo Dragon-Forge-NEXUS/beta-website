@@ -5,6 +5,11 @@
 <priority>1.00</priority>
 </url>
 <url>
+<loc>https://nightly.dragonforgenexus.xyz/presskit</loc>
+<lastmod>2024-03-04T03:16:16+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
 <loc>https://nightly.dragonforgenexus.xyz/partners</loc>
 <lastmod>2024-03-04T02:44:49+00:00</lastmod>
 <priority>0.80</priority>
